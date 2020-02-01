@@ -1,0 +1,9 @@
+<%- include('partials/header'); %>
+    <form action="/complaint" class="create-complaint" method="POST">
+        <input type="text" id="title" name="title" placeholder="Complaint title">
+        <textarea rows="2" name="content" value="content" placeholder="What's your grievance"></textarea>
+        <input type="hidden" name="usrId" value="<%=Id%>">
+        <button type="submit" class="circle">+</button>
+    </form>
+
+<%- include('partials/footer'); %>
